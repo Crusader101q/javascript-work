@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>calculator</title>
+ <style>
+  button{
+    background-color: gray;
+    color: aqua;
+    padding: 20px;
+    border: 10px;
+    border-radius: 10px;
+    font-size: larger;
+    }
+    button:hover{
+      background-color: red;
+      transition-duration: 0.8s;
+      transition-timing-function: ease-in-out;
+    }
+  div{
+    background-color: black;    
+    align-content: center;
+    padding-left: 10px;
+    border-radius: 20px;
+    margin-top: 100px;
+    display: inline-block;
+  }
+  body{
+    background-color: black;
+  }
+ </style>
+</head>
+<body>
+  <div>
+  <p>
+  <button onclick="calculation +='1';
+  console.log(calculation)">1</button>
+  <button onclick="calculation +='2';
+  console.log(calculation)">2</button>
+  <button onclick="calculation +='3';
+  console.log(calculation)">3</button>
+  <button onclick="calculation +=' + ';
+  console.log(calculation)">+</button>
+  </p>
+   <button onclick="calculation +='4';
+   console.log(calculation)">4</button>
+    <button onclick="calculation +='5';
+    console.log(calculation)">5</button>
+    <button onclick="calculation +='6';
+    console.log(calculation)">6</button>
+    <button onclick="calculation +=' - ';
+    console.log(calculation)">-</button>
+    <p>
+  <button onclick="calculation +='7';
+  console.log(calculation)">7</button>
+   <button onclick="calculation +='8';
+   console.log(calculation)">8</button>
+    <button onclick="calculation +='9';
+    console.log(calculation)">9</button>
+    <button onclick="calculation +=' / ';
+    console.log(calculation)">/</button>
+    </p>
+    <button onclick="calculation +='0';
+   console.log(calculation)">0</button>
+   <button onclick="calculation +='.';
+   console.log(calculation)">.</button>
+  <button onclick="calculation = eval(calculation);
+ console.log(calculation); alert (calculation);">=</button>
+  <button onclick="calculation +=' * ';
+  console.log(calculation);">*</button>
+  </div>
+
+  <script>
+    let calculation =''
+    console.log(calculation)
+  </script>
+</body>
+</html>
